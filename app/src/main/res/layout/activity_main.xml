@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+        <com.yx.android.aidlserver.ChangeColorWithText
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yx:Icon="@mipmap/ic_menu_start_conversation"
+            yx:text="@string/app_name"
+            yx:text_color="#ff45c01a"
+            android:padding="5dp"
+            yx:text_size="12sp" />
+
+        <com.yx.android.aidlserver.ChangeColorWithText
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yx:Icon="@mipmap/ic_menu_friendslist"
+            yx:text="@string/tab_contact"
+            yx:text_color="#ff45c01a"
+            android:padding="5dp"
+            yx:text_size="12sp" />
+
+        <com.yx.android.aidlserver.ChangeColorWithText
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yx:Icon="@mipmap/ic_menu_emoticons"
+            yx:text="@string/tab_found"
+            yx:text_color="#ff45c01a"
+            yx:text_size="12sp" />
+
+        <com.yx.android.aidlserver.ChangeColorWithText
+            android:id="@+id/tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yx:Icon="@mipmap/ic_menu_allfriends"
+            yx:text="@string/tab_me"
+            yx:text_color="#ff45c01a"
+            android:padding="5dp"
+            yx:text_size="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
